@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping   xmlns="urn:nhibernate-mapping-2.2"
+   assembly="Model" namespace="Model">
+    <class name ="Model.Entities.Record,Model" table="Record">
+        <id name="Id" column="Id" type="Int32" unsaved-value="0">
+            <generator class ="native"></generator>
+        </id>
+        <property name="Doctor" column ="Doctor" type="string" length="10" not-null="false"/>
+        <property name="Item" column ="Item" type="string" length="30" not-null="false"/>
+        <property name="Content" column ="Content" type="string" length="200" not-null="false"/>
+        <property name="Fee" column ="Fee" type="float" not-null="false"/>
+        <property name="Time" column ="Time" type="string" length="20" not-null="false"/>
+        <property name="Patient" column="Patient" type="string" length="20" not-null="false" ></property>
+    </class>
+</hibernate-mapping>

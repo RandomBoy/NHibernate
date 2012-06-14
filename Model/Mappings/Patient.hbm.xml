@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping   xmlns="urn:nhibernate-mapping-2.2"
+   assembly="Model" namespace="Model">
+    <class name ="Model.Entities.Patient,Model" table="Patient">
+        <id name="Id" column="Id" type="Int32" unsaved-value="0">
+            <generator class ="native"></generator>
+        </id>
+        <property name="Name" column ="Name" type="string" length="10" not-null="false"/>
+        <property name="Age" column ="Age" type="Int32" length="11" not-null="false"/>
+        <property name="Isin" column ="Isin" type="Int32" length="11" not-null="true"/>
+        <property name="Contact" column="Contact" type="string" length="20" not-null="false" ></property>
+    </class>
+</hibernate-mapping>
